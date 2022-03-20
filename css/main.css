@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../image/new-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (max-width: 992px) {} */
+.search_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 15px;
+}
+
+.search_area button, .search_area input {
+  border: none;
+  outline: none;
+}
+
+.search_area input {
+  width: 400px;
+  height: 40px;
+  background-color: #f0f2f5;
+  border-radius: 3px;
+  padding: 8px 8px;
+  border: 0.3px solid #1876f252;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+}
+
+.search_area button {
+  width: 80px;
+  height: 40px;
+  background: #1877f2;
+  border-radius: 3px;
+  color: white;
+  margin-left: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+  cursor: pointer;
+}
+
+.search_area button:hover {
+  background-color: #005e74;
+  color: white;
+}
+
+.search_area button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner_weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner_weather .left {
+  background: #ceeef59d;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+  width: 50%;
+  border-radius: 4px;
+  padding: 15px;
+  height: 80vh;
+  text-align: center;
+}
+
+.inner_weather .left #city_temp {
+  margin-top: 25px;
+}
+
+.inner_weather .left #city_temp #convert_btn {
+  border: none;
+  width: 156px;
+  height: 40px;
+  background: #0482a8;
+  margin-top: 5px;
+  border-radius: 3px;
+  color: white;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+  cursor: pointer;
+}
+
+.inner_weather .left #city_temp #convert_btn:hover {
+  background: #1877f2;
+}
+
+.inner_weather .left #city_temp .temp_unit {
+  color: #ff0000;
+}
+
+.inner_weather .left h2 {
+  color: #064c68;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.inner_weather .left #icon {
+  width: 130px;
+}
+
+.inner_weather .left .city {
+  font-size: 25px;
+}
+
+.inner_weather .left .condition {
+  color: #005169;
+  margin: 6px 0;
+  font-size: 17px;
+}
+
+.inner_weather .left .w-img {
+  margin-top: 30px;
+  width: 45%;
+  opacity: 0.5;
+}
+
+.inner_weather .right {
+  margin-left: 10px;
+  background: #ceeef59d;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+  width: 50%;
+  border-radius: 4px;
+  padding: 15px;
+  height: 80vh;
+  text-align: center;
+}
+
+.inner_weather .right h2 {
+  color: #064c68;
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.inner_weather .right .history_card {
+  width: 100%;
+  height: 90px;
+  padding: 0 10pxpx;
+  border-radius: 5px;
+  border-bottom: 1px solid #025e94d2;
+  background: #ceeef59d;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.199);
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.inner_weather .right .history_card h4 {
+  color: #064c68;
+  font-size: 18px;
+}
+
+.inner_weather .right .history_card .conditions {
+  margin: 5px 0;
+}
